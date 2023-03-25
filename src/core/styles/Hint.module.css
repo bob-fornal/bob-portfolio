@@ -1,0 +1,22 @@
+.wrapper {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vw;
+  background-color: #55555577;
+  z-index: 1000;
+}
+
+.hint-text {
+  color: white;
+}
+.hint-arrow {
+  float: right;
+}
+.hint-wrapper {
+  position: absolute;
+  right: 7.5em;
+  top: calc(100vh - 13em);
+}
+

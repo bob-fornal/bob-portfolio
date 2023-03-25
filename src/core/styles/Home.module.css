@@ -1,0 +1,107 @@
+.wrapper {
+  position: fixed;
+  transition: all 2s ease;
+}
+
+.wrapper.at-00 {
+  left: 0;
+  top: 0;
+}
+.wrapper.at-00.from-01 {
+  /* distance minus width */
+  transform: translate(0, 0);
+}
+.wrapper.at-00.from-02 {
+  transform: translate(0, 0);
+}
+
+.wrapper.at-01 {
+  left: -100vw;
+  top: 0;
+}
+.wrapper.at-01.from-00 {
+  transform: translate(0, 0);
+}
+.wrapper.at-02 {
+  left: -200vw;
+  top: 0;
+}
+.wrapper.at-10 {
+  left: 0;
+  top: -100vh;
+}
+.wrapper.at-11 {
+  left: -100vw;
+  top: -100vh;
+}
+.wrapper.at-12 {
+  left: -200vw;
+  top: -100vh;
+}
+.wrapper.at-20 {
+  left: 0;
+  top: -200vh;
+}
+.wrapper.at-21 {
+  left: -100vw;
+  top: -200vh;
+}
+.wrapper.at-22 {
+  left: -200vw;
+  top: -200vh;
+}
+
+.page {
+  width: 100vw;
+  height: 100vh;
+  background-color: #333333;
+  color: white;
+  padding: 1em;
+}
+
+.position-00 {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.position-01 {
+  position: absolute;
+  left: calc(100vw + 1px);
+  top: 0;
+}
+.position-02 {
+  position: absolute;
+  left: calc(200vw + 1px);
+  top: 0;
+}
+.position-10 {
+  position: absolute;
+  left: 0;
+  top: calc(100vh + 1px);
+}
+.position-11 {
+  position: absolute;
+  left: calc(100vw + 1px);
+  top: calc(100vh + 1px);
+}
+.position-12 {
+  position: absolute;
+  left: calc(200vw + 1px);
+  top: calc(100vh + 1px);
+}
+.position-20 {
+  position: absolute;
+  left: 0;
+  top: calc(200vh + 1px);
+}
+.position-21 {
+  position: absolute;
+  left: calc(100vw + 1px);
+  top: calc(200vh + 1px);
+}
+.position-22 {
+  position: absolute;
+  left: calc(200vw + 1px);
+  top: calc(200vh + 1px);
+}
+
