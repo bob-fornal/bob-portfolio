@@ -4,7 +4,7 @@ const isProduction = process.env.ENVIRONMENT === 'production';
 
 const nextConfig = {
   reactStrictMode: true,
-  assetPrefix: isProduction ? '/portfolio--react--bob/' : '',
+  assetPrefix: isProduction ? '/bob-portfolio/' : '',
   images: {
     unoptimized: true,
   },
