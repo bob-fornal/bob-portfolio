@@ -10,7 +10,10 @@ export default function Wheel() {
       <div className={styles['right-70']}>
         <h1>Wheel of EDJE</h1>
         
-        <p>Spinning Wheel to select a person or prize</p>
+        <p>
+          Spinning Wheel to select a person or prize. This began as an exploration of CANVAS but became important
+          as Covid hit a few years ago.
+        </p>
 
         <Image src="assets/videos/wheel.webp" alt="wheel animation" width={640} height={360} />
 

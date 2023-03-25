@@ -9,6 +9,8 @@ export default function DigitalClock() {
       </div>
       <div className={styles['right-70']}>
         <h1>Digital Clock</h1>
+        <p>This was mostly me plaing with CSS one day and I love the results.</p>
+        
         <Image src="assets/videos/digital-clock.webp" alt="digital clock animation" width={640} height={360} />
 
         <a className={styles.links} href="https://github.com/bob-fornal/digital-clock" target="_blank">REPO</a>
