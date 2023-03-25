@@ -8,7 +8,7 @@ export default function App({ Component, pageProps }) {
   return (
     <>
       <Head>
-        { isProduction ? <base href="https://bob-fornal.github.io/bob-portfolio/" /> : null }
+        { isProduction ? <base href="/bob-portfolio/" /> : null }
       </Head>
       <Component {...pageProps} />;
       <Analytics />
