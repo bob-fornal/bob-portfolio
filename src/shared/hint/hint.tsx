@@ -19,7 +19,7 @@ export default function Hint() {
         <p className={styles['hint-text']}>
           Click the buttons to navigate<br/>or use the UP, DOWN, LEFT, RIGHT arrow keys.
         </p>
-        <Image className={styles['hint-arrow']} src="/assets/images/arrow-right.png" alt="arrow" width={50} height={50}></Image>
+        <Image className={styles['hint-arrow']} src="assets/images/arrow-right.png" alt="arrow" width={50} height={50}></Image>
       </div>
       {/* <a href="https://www.flaticon.com/free-icons/arrows" title="arrows icons">Arrows icons created by Creative Stall Premium - Flaticon</a> */}
     </div>

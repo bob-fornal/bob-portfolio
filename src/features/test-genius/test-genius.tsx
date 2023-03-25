@@ -5,7 +5,7 @@ export default function TestGenius() {
   return (
     <div className={styles.wrapper}>
       <div className={styles['left-40']}>
-        <Image className={styles.img} src="/assets/images/test-genius.jpg" alt="Checkmark" width={200} height={200} />
+        <Image className={styles.img} src="assets/images/test-genius.jpg" alt="Checkmark" width={200} height={200} />
       </div>
       <div className={styles['right-60']}>
         <h1>Test Genius</h1>
