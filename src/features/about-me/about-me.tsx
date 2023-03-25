@@ -16,6 +16,13 @@ export default function AboutMe() {
         <h1>Bob Fornal</h1>
         <p className={styles.heavy}>Senior Solutions Developer, Leading EDJE, Inc.</p>
         <p>Front-End Developer with a passion for learning, testing, mentoring, speaking and personal growth. Blessed husband and proud father of two!</p>
+
+        <ul>
+          <li>Frontend Developer</li>
+          <li>Mentor</li>
+          <li>Speaker</li>
+        </ul>
+
         <p>&quot;Learning from my mistakes over the decades, I feel that I have become a solid programmer.&quot; -- Me</p>
 
         <a className={styles.icons} href={'https://twitter.com/rfornal'} target="_blank" title="Twitter"><TwitterIcon size={48} /></a>
