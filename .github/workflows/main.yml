@@ -28,7 +28,7 @@ jobs:
     - name: Create .env File
       run: |
         touch .env
-        echo ENVIRONMENT=production
+        echo ENVIRONMENT=github >> .env
 
     - name: Build
       run: npm run build

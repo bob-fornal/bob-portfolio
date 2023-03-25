@@ -57,7 +57,7 @@ export default function Navigation(props: { position: string, setPosition: any }
         <button className={getStyles('12')} value="12" onClick={handleSelection} title="Digital Clock"></button>
       </div>
       <div className={styles.row}>
-        <button className={getStyles('20')} value="20" onClick={handleSelection}></button>
+        <button className={getStyles('20')} value="20" onClick={handleSelection} title="#100DaysOfCode Tracker"></button>
         <button className={getStyles('21')} value="21" onClick={handleSelection} title="404 Ripped"></button>
         <button className={getStyles('22')} value="22" onClick={handleSelection} title="404 Zombies"></button>
       </div>
