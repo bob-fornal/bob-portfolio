@@ -31,9 +31,10 @@ jobs:
         echo ENVIRONMENT=production
 
     - name: Build
-      run: |
-        npm run build
-        npm run export
+      run: npm run build
+
+    - name: Export
+      run: npm run export
 
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v3
