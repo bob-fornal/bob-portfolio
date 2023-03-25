@@ -18,7 +18,7 @@
   width: 100%;
   position: absolute;
   left: 0;
-  top: -1em;
+  bottom: 0;
 }
 
 .wrapper {
@@ -66,4 +66,11 @@
 .icons,
 .links {
   margin-right: 1em;
+}
+
+.top-content {
+  display: inline-block;
+  position: relative;
+  left: 2em;
+  top: calc(2em - 100vh);
 }

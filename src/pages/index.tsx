@@ -13,6 +13,7 @@ import WorkNotes from '@features/work-notes/work-notes';
 import DigitalClock from '@features/digital-clock/digital-clock';
 import Ripped from '@features/ripped/ripped';
 import Zombies from '@features/zombies/zombies';
+import Tracker from '@features/tracker/tracker';
 
 export default function Home() {
   const [position, setPosition] = React.useState('00');
@@ -55,7 +56,7 @@ export default function Home() {
         </div>
         <div className={styles.row}>
           <div id="page-07" className={`${styles.page} ${styles['position-20']}`}>
-            <h1>Bob Fornal: 7</h1>
+            <Tracker></Tracker>
           </div>
           <div id="page-08" className={`${styles.page} ${styles['position-21']}`}>
             <Ripped></Ripped>

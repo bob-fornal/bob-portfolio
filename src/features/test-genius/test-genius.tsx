@@ -8,7 +8,7 @@ export default function TestGenius() {
         <Image className={styles.img} src="assets/images/test-genius.jpg" alt="Checkmark" width={200} height={200} />
       </div>
       <div className={styles['right-60']}>
-        <h1>Test Genius</h1>
+        <Image src="assets/images/test-genius.png" alt="Test Genius Logo" width={593} height={100} />
         
         <ol>
           <li>Build something that will help my kids with TEST TAKING SKILLS.</li>
