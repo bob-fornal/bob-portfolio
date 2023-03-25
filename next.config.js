@@ -1,10 +1,11 @@
 /** @type {import('next').NextConfig} */
 require('dotenv').config();
 const isProduction = process.env.ENVIRONMENT === 'production';
+console.log(isProduction, process.env.ENVIRONMENT);
 
 const nextConfig = {
   reactStrictMode: true,
-  assetPrefix: isProduction ? '/portfolio--react--bob/' : '',
+  assetPrefix: isProduction ? '/bob-portfolio/' : '',
   images: {
     unoptimized: true,
   },
