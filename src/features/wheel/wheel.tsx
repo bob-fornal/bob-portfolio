@@ -5,7 +5,7 @@ export default function Wheel() {
   return (
     <div className={styles.wrapper}>
       <div className={styles['left-30']}>
-        <Image className={styles.img} src="assets/images/wheel.png" alt="Eddie on edge of wheel" width={200} height={200} />
+        <img className={styles.img} src="https://res.cloudinary.com/bob-fornal/image/upload/c_scale,w_200/v1679965929/portfolio/images/wheel_kej4ur.png" alt="Eddie on edge of wheel" />
       </div>
       <div className={styles['right-70']}>
         <h1>Wheel of EDJE</h1>
@@ -15,8 +15,7 @@ export default function Wheel() {
           as Covid hit a few years ago.
         </p>
 
-        <Image src="assets/videos/wheel.webp" alt="wheel animation" width={640} height={360} />
-
+        <img src="https://res.cloudinary.com/bob-fornal/image/upload/c_scale,w_640/v1679965930/portfolio/videos/wheel_yrm66h.webp" alt="wheel animation" />
 
         <a className={styles.links} href="https://github.com/bob-fornal/wheel-of-edje" target="_blank">REPO</a>
         <a className={styles.links} href="https://bob-fornal.github.io/wheel-of-edje/" target="_blank">SITE</a>

@@ -5,10 +5,10 @@ export default function TestGenius() {
   return (
     <div className={styles.wrapper}>
       <div className={styles['left-40']}>
-        <Image className={styles.img} src="assets/images/test-genius.jpg" alt="Checkmark" width={200} height={200} />
+        <img className={styles.img} src="https://res.cloudinary.com/bob-fornal/image/upload/c_scale,w_200/v1679965930/portfolio/images/test-genius_ypqaiq.jpg" alt="Checkmark" />
       </div>
       <div className={styles['right-60']}>
-        <Image src="assets/images/test-genius.png" alt="Test Genius Logo" width={593} height={100} />
+        <img src="https://res.cloudinary.com/bob-fornal/image/upload/c_scale,w_593/v1679965929/portfolio/images/test-genius_llxyix.png" alt="Test Genius Logo" />
         
         <p>
           This is an Open Source project. I asked the general Twitter tech community for help and had over 34 people respond.
