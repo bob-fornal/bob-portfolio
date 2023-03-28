@@ -1,10 +1,20 @@
-.wrapper {
+.desktop.wrapper {
   position: fixed;
   left: 0;
   top: 0;
   width: 100vw;
-  height: 100vw;
+  height: 100vh;
   background-color: #55555577;
+  z-index: 1000;
+}
+.mobile.wrapper {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  font-size: 0.75rem;
+  background-color: #555555cc;
   z-index: 1000;
 }
 
@@ -14,9 +24,14 @@
 .hint-arrow {
   float: right;
 }
-.hint-wrapper {
+.desktop .hint-wrapper {
   position: absolute;
   right: 7.5em;
+  top: calc(100vh - 13em);
+}
+.mobile .hint-wrapper {
+  position: absolute;
+  left: 1em;
   top: calc(100vh - 13em);
 }
 

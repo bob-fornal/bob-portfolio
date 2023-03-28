@@ -1,9 +1,9 @@
 import Image from 'next/image';
 import styles from '@core/styles/Page-Level.module.css';
 
-export default function Wheel() {
+export default function Wheel(props: { isMobile: boolean }) {
   return (
-    <div className={styles.wrapper}>
+    <div className={`${styles.wrapper} ${ props.isMobile ? styles.mobile : styles.desktop }`}>
       <div className={styles['left-30']}>
         <img className={styles.img} src="https://res.cloudinary.com/bob-fornal/image/upload/c_scale,w_200/v1679965929/portfolio/images/wheel_kej4ur.png" alt="Eddie on edge of wheel" />
       </div>

@@ -1,9 +1,9 @@
 import Image from 'next/image';
 import styles from '@core/styles/Page-Level.module.css';
 
-export default function CodeSquid() {
+export default function CodeSquid(props: { isMobile: boolean }) {
   return (
-    <div className={styles.wrapper}>
+    <div className={`${styles.wrapper} ${ props.isMobile ? styles.mobile : styles.desktop }`}>
       <div className={styles['left-40']}>
         <img className={styles.img} src="https://res.cloudinary.com/bob-fornal/image/upload/c_scale,w_200/v1679965928/portfolio/images/code-squid_c8dqoo.jpg" alt="Code Squid Logo" />
       </div>
