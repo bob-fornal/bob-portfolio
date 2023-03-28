@@ -5,7 +5,7 @@ export default function Ripped() {
   return (
     <>
       <div className={styles['wrapper-complete']}>
-        <Image src="assets/images/ripped-404.png" alt="ripped hole showing code" width={352} height={283} />
+        <img src="https://res.cloudinary.com/bob-fornal/image/upload/c_scale,w_352/v1679965930/portfolio/images/ripped-404_ulpogu.png" alt="ripped hole showing code" />
       </div>
       <div className={styles['top-content']}>
         <div>This is a 404 Page I enjoy ...</div>

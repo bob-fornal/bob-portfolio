@@ -5,7 +5,7 @@ export default function WorkNotes() {
   return (
     <div className={styles.wrapper}>
       <div className={styles['left-30']}>
-        <Image className={styles.img} src="assets/images/work-notes.png" alt="Work Notes Logo" width={200} height={200} />
+        <img className={styles.img} src="https://res.cloudinary.com/bob-fornal/image/upload/c_scale,w_200/v1679965928/portfolio/images/code-squid_c8dqoo.jpg" alt="Work Notes Logo" />
       </div>
       <div className={styles['right-70']}>
         <h1>Work Notes</h1>

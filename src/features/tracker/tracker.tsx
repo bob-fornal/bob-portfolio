@@ -5,7 +5,7 @@ export default function Tracker() {
   return (
     <div className={styles.wrapper}>
       <div className={styles['left-30']}>
-        <Image className={styles.img} src="assets/images/tracker.png" alt="Tracker Page" width={250} height={125} />
+        <img className={styles.img} src="https://res.cloudinary.com/bob-fornal/image/upload/c_scale,w_250/v1679965929/portfolio/images/tracker_w4pgmw.png" alt="Tracker Page" />
       </div>
       <div className={styles['right-70']}>
         <h1>#100DaysOfCode Tracker</h1>
