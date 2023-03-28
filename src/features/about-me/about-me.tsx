@@ -6,9 +6,9 @@ import {
   TwitterIcon
 } from 'next-share';
 
-export default function AboutMe() {
+export default function AboutMe(props: { isMobile: boolean }) {
   return (
-    <div className={styles.wrapper}>
+    <div className={`${styles.wrapper} ${props.isMobile ? styles.mobile : styles.desktop}`}>
       <div className={styles['left-30']}>
         <img className={`${styles.img} ${styles.circular}`} src="https://res.cloudinary.com/bob-fornal/image/upload/c_scale,w_200/v1679965928/portfolio/images/bob_wadnuh.jpg" alt="Profile of Bob Fornal" />
       </div>

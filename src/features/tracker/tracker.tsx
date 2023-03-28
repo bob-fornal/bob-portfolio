@@ -1,9 +1,9 @@
 import Image from "next/image";
 import styles from '@core/styles/Page-Level.module.css';
 
-export default function Tracker() {
+export default function Tracker(props: { isMobile: boolean }) {
   return (
-    <div className={styles.wrapper}>
+    <div className={`${styles.wrapper} ${ props.isMobile ? styles.mobile : styles.desktop }`}>
       <div className={styles['left-30']}>
         <img className={styles.img} src="https://res.cloudinary.com/bob-fornal/image/upload/c_scale,w_250/v1679965929/portfolio/images/tracker_w4pgmw.png" alt="Tracker Page" />
       </div>

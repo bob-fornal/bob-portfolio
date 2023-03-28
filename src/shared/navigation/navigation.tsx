@@ -1,5 +1,7 @@
+import React, { useEffect, useState } from 'react';
+import { useSwipeable } from "react-swipeable";
+
 import styles from '@core/styles/Navigation.module.css';
-import React from 'react';
 
 import useEventListener from '@core/services/use-event-listener.js';
 
@@ -14,16 +16,15 @@ const DIRECTIONS: { [key: string]: any } = {
   '20': { 'ArrowLeft': 'NONE', 'ArrowUp': '10', 'ArrowRight': '21', 'ArrowDown': 'NONE', },
   '21': { 'ArrowLeft': '20', 'ArrowUp': '11', 'ArrowRight': '22', 'ArrowDown': 'NONE', },
   '22': { 'ArrowLeft': '21', 'ArrowUp': '12', 'ArrowRight': 'NONE', 'ArrowDown': 'NONE', },
-}
+};
 
-export default function Navigation(props: { position: string, setPosition: any }) {
-  const [position, setPosition] = React.useState('00');
+export default function Navigation(props: { isMobile: boolean, position: string, setPosition: any }) {
+  const [position, setPosition] = useState('00');
 
   function keyHandler(event: any) {
     const { key } = event;
     if (KEYS.includes(String(key))) {
       const direction: string = DIRECTIONS[position][key];
-      console.log(key, direction);
       if (direction !== 'NONE') {
         handleSelection({ target: { value: direction } });
       }
@@ -31,6 +32,32 @@ export default function Navigation(props: { position: string, setPosition: any }
   }
 
   useEventListener('keydown', keyHandler);
+
+  const { ref: documentRef } = useSwipeable({
+    onSwiped: ({ dir, event }) => {
+      let direction = '';
+      switch(dir) {
+        case 'Left':
+          direction = 'Right';
+          break;
+        case 'Right':
+          direction = 'Left';
+          break;
+        case 'Up':
+          direction = 'Down';
+          break;
+        case 'Down':
+          direction = 'Up';
+          break;
+        }
+      keyHandler({ key: `Arrow${direction}`});
+    }
+  });
+
+  useEffect(() => {
+    documentRef(document.body);
+    return () => documentRef(null);
+  });
 
   function handleSelection(event: any) {
     const posn: string = event.target.value;
@@ -45,7 +72,7 @@ export default function Navigation(props: { position: string, setPosition: any }
   }
 
   return (
-    <div className={styles.wrapper}>
+    <div className={`${styles.wrapper} ${props.isMobile ? styles.mobile : styles.desktop}`}>
       <div className={styles.row}>
         <button className={getStyles('00')} value="00" onClick={handleSelection} title="About Me"></button>
         <button className={getStyles('01')} value="01" onClick={handleSelection} title="Test Genius"></button>
